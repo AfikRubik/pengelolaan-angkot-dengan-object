@@ -4,7 +4,7 @@ function Angkot(namaSupir, trayek, penumpang, kas) {
   this.penumpang = penumpang;
   this.kas = kas;
   this.tambahPenumpang = function(namaPenumpang) {
-    if (this.penumpang.length <= 4) {
+    if (this.penumpang.length < 4) {
       this.penumpang.push(namaPenumpang);
       return this.penumpang;
     } else {
